@@ -1,0 +1,68 @@
+body{
+    background-color: lavender;
+}
+
+legend{
+    font-size: 16px;
+    font-weight: bold;
+    border-color: #ccc;
+}
+/*
+fieldset{
+    border: 1px solid #ccc;
+
+    padding: 0 5px 5px 5px;
+}
+
+legend{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 23px;
+    border-color: #ccc;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    legend{
+        margin-bottom: 23px;
+    }
+}
+*/
+label{
+    margin-left: 5px;
+}
+
+.label{
+    font-size: 11px;
+    vertical-align: top;
+}
+
+.btn{
+    padding: 2px 12px;
+}
+
+#title-panel {
+    margin-bottom: 15px;
+}
+
+.controls-section{
+    display: inline-flex;
+    flex-flow: wrap;
+    margin-bottom: 5px;
+}
+
+#control-buttons{
+    margin: 5px 0px;
+}
+
+.footer{
+    background-color: #111;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.footer > p {
+    text-align: center;
+    margin-bottom: 0px;
+}
