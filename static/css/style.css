@@ -1,42 +1,25 @@
-body{
-    background-color: lavender;
-}
-
-legend{
+legend {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: lighter;
     border-color: #ccc;
-}
-/*
-fieldset{
-    border: 1px solid #ccc;
-
-    padding: 0 5px 5px 5px;
+    margin-bottom: 15px;
 }
 
-legend{
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 23px;
-    border-color: #ccc;
+input[type="range"] {
+    display: inline;
+    width: 100px;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    legend{
-        margin-bottom: 23px;
-    }
-}
-*/
-label{
+label {
     margin-left: 5px;
 }
 
-.label{
+.label {
     font-size: 11px;
     vertical-align: top;
 }
 
-.btn{
+.btn {
     padding: 2px 12px;
 }
 
@@ -44,17 +27,25 @@ label{
     margin-bottom: 15px;
 }
 
-.controls-section{
+.number-input-60 {
+    width: 60px;
+}
+
+.number-input-50 {
+    width: 50px;
+}
+
+.controls-section {
     display: inline-flex;
     flex-flow: wrap;
     margin-bottom: 5px;
 }
 
-#control-buttons{
+#control-buttons {
     margin: 5px 0px;
 }
 
-.footer{
+.footer {
     background-color: #111;
     position: fixed;
     bottom: 0px;
