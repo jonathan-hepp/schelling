@@ -95,19 +95,29 @@
   </div>
   <footer class="text-center">
     <p>Developed by <a target="_blank" href="https://about.me/jonathan_hepp">Jonathan Hepp</a>.</p>
-    <!--    <p>Learn more about how the simulator works <a data-toggle="modal" href="#game-info-modal">clicking here</a>.</p>-->
+    <p>Learn more about how the simulator works <a data-toggle="modal" href="#game-info-modal">clicking here</a>.</p>
   </footer>
 </div>
 <div class="modal fade" id="infoModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content text-justify">
             <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title">Schelling's Model for Segregation</h4>
             </div>
             <div class="modal-body">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+		<p><strong>Background</strong></p>
+		<p>This simulator was inspired by an economic model proposed by <a href="https://en.wikipedia.org/wiki/Thomas_Schelling" target="_blank">Thomas Schelling</a> to try to understand the segregation of populations. It was originally talking about racial segregation, but it is generic enough to be used in different contexts of segregation or no context at all. This simulator isn't meant to be accurate with the original model. </p>
+		<p><strong>How It Works</strong></p>
+		<p>The simulation board is randomly filled with two different populations and blank space. In the first round, the algorithm iterates over the board cells looking for dissatisfied agents. </p>
+		<p>A dissatisfied agent is one which has a number of opposing agents surrounding him that is greater than the threshold defined in the simulation. So let's say an agent of the population A is surrounded by 5 agents of the population B and the threshold defined is 4. This agent in particular is considered dissatisfied by the algorithm.</p>
+		<p>After the algorithm has iterated over the whole board, the simulator changes the position of all the dissatisfied agents. This agents can change positions with other dissatisfied agents or with blank spaces.</p>
+		<p>Notice that this changing in agents positions can have two effects: it can make previously dissatisfied agents to become satisfied and vice-versa. </p>
+		<p>The simulator keeps repeating this process until there are no more dissatisfied agents on the board. </p>
+		<p><strong>What It Means</strong></p>
+		<p>After running different setups of the simulation, you should be able to notice something. </p>
+		<p>The threshold value of the simulation is called the tolerance threshold, usually referred as <i>variable t</i>, and it is the determining factor on the outcome of the simulation. The lower you set this threshold, the more segregated the populations become, usually forming big isolated blocks separated by blank spaces. As you increase the threshold, the board gets more mixed up, more homogeneous. That is the whole point of the simulation.</p>
+		<p>You may notice that in certain combinations of board size and threshold sets the simulation might never end, since it might not be possible to satisfy all the agents. Nevertheless, you can stop the simulation at any time. </p>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
